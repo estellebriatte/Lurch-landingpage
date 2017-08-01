@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
     <head>
         <title>Lurch landing page</title>
         <meta charset="utf-8">
@@ -9,54 +9,54 @@
         <meta name="author" content="">
         <link rel="icon" href="../../favicon.ico">
         <link rel="stylesheet" href="bootstrap/css/main.css">
+        <link rel="stylesheet" href="bootstrap/images">
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     </head>
 
     <body>
-        <div id="conteneur">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">LURCH</a>
-                    </div>
-                    <div id="navbar" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+        <header class="navbar navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">LURCH</a>
                 </div>
-            </nav>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </header>
 
-            <section>
-                <div class="home">
-                    <div class="container">
-                        <div id="Carousel" class = "carousel slide" data-ride = "carousel">
-                        </div>
+        <section>
+            <div class="home">
+                <div class="container">
+                    <div id="Carousel" class = "carousel slide" data-ride = "carousel">
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
             <section>
                 <div class="description">
                     <div class="container">
-                        <div class="row">
+                        <div class="row" id="second-section">
                             <div class="col-sm-7 col-md-5">
-                                <h2 class ="presentation"> Découvrez Lurch </h2>
-                                <div class="places">
-                                    <h3> Lieux </h3>
-                                    <p>Partez à la découverte de </p>
-                                </div>
-                                <div class="organisation">
-                                    <h3> Organisation </h3>
+                                <h2 class ="presentation"> DECOUVREZ LURCH</h2>
+                                <p id="body">To the opening, Lurch !</p>
+                                <a class="get-started cta button" href="#">Get Started</a>
+                            </div>
+                            <div class="col-sm-4 col-sm-offset-1 col-md-6">
+                                <div class="galleries">
+                                    <img id="illustration" src="bootstrap/images/artstreet.jpg">
                                 </div>
                             </div>
                         </div>
@@ -65,30 +65,55 @@
             </section>
 
             <section>
-                <div class="fonctionnalités">
+                <div class="places">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6 col-md-5 col-md-offset-1 col-lg-4">
-                                <div class="phone">
-                                    
+                            <div class="col-sm-7 col-md-5">
+                                    <h3> Lieux </h3>
+                                    <p>Profitez de Lurch pour découvrir de nouvelles galeries parisiennes ainsi que des
+                                        lieux d'exposition inédit, dans une ambiance industrielle</p>
+                                <div class="organization">
+                                    <h3> Organisation </h3>
+                                    <p>Plus besoin de passer par les réseaux sociaux et des groupes privés
+                                        afin de bénéficier des meilleurs événements de la capitale. Lurch s'occupe de tout
+                                        répertorier et de vous le faire partager</p>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-md-5 col-lg-5 col-lg-offset-1 text-left text-white">
-                                <div class="practical">
-                                    <h2>pratique</h2>
-                                </div>
-                                <div class="search">
-                                    <h3>rechercher</h3>
-                                </div>
-                                <div class="fancy">
-                                    <h3>branché</h3>
-                                </div>
-                                <div class="discover">
-                                    <h3>découvrir</h3>
+                                <div class="criteria">
+                                    <h3> Choix </h3>
+                                    <p>Précisez votre recherche en fonction de vos affinités. Lurch vous permet de trouver
+                                        votre vernissage par arrondissement</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="fonctionnality">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5 col-md-offset-1 col-lg-4">
+                                    <div class="phone">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-5 col-lg-5 col-lg-offset-1 text-left text-white">
+                                    <div class="practical">
+                                        <h2>pratique</h2>
+                                    </div>
+                                    <div class="search">
+                                        <h3>rechercher</h3>
+                                    </div>
+                                    <div class="fancy">
+                                        <h3>branché</h3>
+                                    </div>
+                                    <div class="discover">
+                                        <h3>découvrir</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </section>
 
