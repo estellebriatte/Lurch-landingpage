@@ -1,7 +1,17 @@
-(function($){
-    setInterval(function(){
-        $(".slideshow ul li:first-child").animate({"margin-left": -350}, 800, function(){
-            $(this).css("margin-left",0).appendTo(".slideshow ul");
-        });
-    }, 3500);
-})(jQuery);
+(function(){
+    var imgLen = document.getElementById('slideshow');
+    var images = imgLen.getElementsByTagName('img');
+    var counter = 1;
+
+    if(counter <= images.length){
+        setInterval(function(){
+            images[0].src = images[counter].src;
+            console.log(images[counter].src);
+            counter++;
+
+            if(counter === images.length){
+                counter = 1;
+            }
+        },4000);
+    }
+})();
